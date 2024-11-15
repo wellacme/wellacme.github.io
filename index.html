@@ -18,27 +18,37 @@
             color: #333;
         }
 
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            padding: 1rem 2rem;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            z-index: 1000;
-        }
+        /*.navbar {*/
+        /*    position: fixed;*/
+        /*    top: 0;*/
+        /*    width: 100%;*/
+        /*    background: rgba(255, 255, 255, 0.95);*/
+        /*    padding: 1rem 2rem;*/
+        /*    box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
+        /*    z-index: 1000;*/
+        /*}*/
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            background: linear-gradient(135deg, #1565C0, #0288D1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .logo img {
-    height: 70px; /* 放大logo */
+        /*.logo {*/
+        /*    font-size: 1.5rem;*/
+        /*    font-weight: bold;*/
+        /*    background: linear-gradient(135deg, #1565C0, #0288D1);*/
+        /*    -webkit-background-clip: text;*/
+        /*    -webkit-text-fill-color: transparent;*/
+        /*}*/
+        .navbar .logo {
+    display: none; /* 隐藏导航栏中的logo */
 }
 
+.hero .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.hero .logo img {
+    height: 70px; /* 放大logo */
+}
 
      .hero {
     height: 100vh;
@@ -149,11 +159,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo"><img src="logo.png" alt="Logo"></div>
-    </nav>
+<!--    <nav class="navbar">-->
+<!--        <div class="logo"><img src="logo.png" alt="Logo"></div>-->
+<!--    </nav>-->
 
     <section class="hero">
+         <div class="logo"><img src="logo.png" alt="Logo"></div>
         <div class="hero-content">
             <h1>Well-ACME Holdings Inc.</h1>
             <p>Innovating at the intersection of Education, Healthcare, and Technology</p>
