@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Well-ACME Holdings Inc.</title>
-    <meta name="description" content="Well-ACME Holdings Inc. - Innovating at the intersection of Education, Healthcare, and Technology">
+    <meta name="description"
+          content="Well-ACME Holdings Inc. - Innovating at the intersection of Education, Healthcare, and Technology">
     <meta name="keywords" content="Education Technology, Healthcare Solutions, Technology Investment">
     <meta name="author" content="Well-ACME Holdings Inc.">
     <meta property="og:title" content="Well-ACME Holdings Inc.">
     <link rel="icon" type="image/png" href="favicon.png">
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Well-ACME Holdings Inc.",
-      "url": "https://www.well-acme.com",
-      "logo": "https://www.well-acme.com/logo.png",
-      "sameAs": [
-        "https://www.facebook.com/wellacme",
-        "https://www.twitter.com/wellacme",
-        "https://www.linkedin.com/company/wellacme"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+1-800-555-5555",
-        "contactType": "Customer Service"
-      }
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Well-ACME Holdings Inc.",
+            "url": "https://www.well-acme.com",
+            "logo": "https://www.well-acme.com/logo.png",
+            "sameAs": [
+                "https://www.facebook.com/wellacme",
+                "https://www.twitter.com/wellacme",
+                "https://www.linkedin.com/company/wellacme"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-800-555-5555",
+                "contactType": "Customer Service"
+            }
+        }
     </script>
     <style>
         * {
@@ -59,36 +60,36 @@
         /*    -webkit-text-fill-color: transparent;*/
         /*}*/
         .navbar .logo {
-    display: none; /* 隐藏导航栏中的logo */
-}
+            display: none; /* 隐藏导航栏中的logo */
+        }
 
-.hero .logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 10;
-}
+        .hero .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+        }
 
-.hero .logo img {
-    height: 70px; /* 放大logo */
-}
+        .hero .logo img {
+            height: 70px; /* 放大logo */
+        }
 
-     .hero {
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                url('banner-desktop-2.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center; /* 文字悬浮在图片的中间 */
-    justify-content: center;
-    text-align: center;
-    color: white;
-    padding: 0 2rem;
-    position: relative;
-}
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url('banner-desktop-2.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center; /* 文字悬浮在图片的中间 */
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 2rem;
+            position: relative;
+        }
 
-.hero-content {
-    margin: 0; /* 调整文字位置 */
-}
+        .hero-content {
+            margin: 0; /* 调整文字位置 */
+        }
 
         .hero-content h1 {
             font-size: 3rem;
@@ -102,11 +103,11 @@
         }
 
         .slick-slider {
-     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
         }
 
         .section {
@@ -131,7 +132,7 @@
         .service-card {
             padding: 2rem;
             border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
 
@@ -170,87 +171,106 @@
             .hero-content h1 {
                 font-size: 2rem;
             }
-            
+
             .hero-content p {
                 font-size: 1rem;
             }
         }
+
+        .friend-links {
+            /*margin-top: 1rem;*/
+        }
+
+        .friend-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        .friend-links a:hover {
+            text-decoration: underline;
+        }
     </style>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
 </head>
 <body>
 <!--    <nav class="navbar">-->
 <!--        <div class="logo"><img src="logo.png" alt="Logo"></div>-->
 <!--    </nav>-->
 
-    <section class="hero">
-         <div class="logo"><img src="logo.png" alt="Logo"></div>
-        <div class="hero-content">
-            <h1>Well-ACME Holdings Inc.</h1>
-            <p>Innovating at the intersection of Education, Healthcare, and Technology</p>
-        </div>
-        <div class="slick-slider">
-<!--            <div><img src="banner-desktop-1.jpg" alt="Banner 1"></div>-->
-<!--            <div><img src="banner-desktop-2.jpg" alt="Banner 2"></div>-->
-        </div>
-    </section>
+<section class="hero">
+    <div class="logo"><img src="logo.png" alt="Logo"></div>
+    <div class="hero-content">
+        <h1>Well-ACME Holdings Inc.</h1>
+        <p>Innovating at the intersection of Education, Healthcare, and Technology</p>
+    </div>
+    <div class="slick-slider">
+        <!--            <div><img src="banner-desktop-1.jpg" alt="Banner 1"></div>-->
+        <!--            <div><img src="banner-desktop-2.jpg" alt="Banner 2"></div>-->
+    </div>
+</section>
 
-    <section class="section">
-        <h2 class="section-title">Our Solutions</h2>
-        <div class="services">
-            <div class="service-card">
-                <h3>Education Technology</h3>
-                <img src="s1.jpg" alt="Education Technology">
-                <p>Investing in innovative educational solutions that transform learning experiences and outcomes.</p>
-            </div>
-            <div class="service-card">
-                <h3>Healthcare Solutions</h3>
-                <img src="s2.jpg" alt="Healthcare Solutions">
-                <p>Developing cutting-edge medical diagnostic systems and healthcare technology solutions.</p>
-            </div>
-            <div class="service-card">
-                <h3>Technology Investment</h3>
-                <img src="s3.jpg" alt="Technology Investment">
-                <p>Strategic investments in emerging technologies and promising tech startups.</p>
-            </div>
+<section class="section">
+    <h2 class="section-title">Our Solutions</h2>
+    <div class="services">
+        <div class="service-card">
+            <h3>Education Technology</h3>
+            <img src="s1.jpg" alt="Education Technology">
+            <p>Investing in innovative educational solutions that transform learning experiences and outcomes.</p>
         </div>
-    </section>
-
-    <section class="section contact">
-        <h2 class="section-title">Connect With Us</h2>
-        <div class="contact-info">
-            <p>We're always looking for innovative partners and investment opportunities.</p>
-            <p>Email: hongyunwan@hotmail.com</p>
-            <p>Location: #101 4211 Number 3 Rd, Richmond, BC V6X 2C3, Canada</p>
+        <div class="service-card">
+            <h3>Healthcare Solutions</h3>
+            <img src="s2.jpg" alt="Healthcare Solutions">
+            <p>Developing cutting-edge medical diagnostic systems and healthcare technology solutions.</p>
         </div>
-    </section>
+        <div class="service-card">
+            <h3>Technology Investment</h3>
+            <img src="s3.jpg" alt="Technology Investment">
+            <p>Strategic investments in emerging technologies and promising tech startups.</p>
+        </div>
+    </div>
+</section>
 
-    <footer class="footer">
-        <p>&copy; 2024 Well-ACME Holdings Inc. All rights reserved.</p>
-    </footer>
+<section class="section contact">
+    <h2 class="section-title">Connect With Us</h2>
+    <div class="contact-info">
+        <p>We're always looking for innovative partners and investment opportunities.</p>
+        <p>Email: hongyunwan@hotmail.com</p>
+        <p>Location: #101 4211 Number 3 Rd, Richmond, BC V6X 2C3, Canada</p>
+    </div>
+</section>
 
-    <script>
-        $(document).ready(function(){
-          $('.slick-slider').slick({
+<footer class="footer">
+    <p>&copy; 2024 Well-ACME Holdings Inc. All rights reserved.</p>
+    <div class="friend-links">
+        Links:
+        <a href="https://lipont.com/" target="_blank">Lipont</a> |
+        <a href="https://www.pmacademy.ca/" target="_blank">PM Academy</a>
+    </div>
+</footer>
+
+<script>
+    $(document).ready(function () {
+        $('.slick-slider').slick({
             dots: true,
             infinite: true,
             speed: 300,
             slidesToShow: 1,
             adaptiveHeight: true
-          });
         });
+    });
 
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-            } else {
-                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-            }
-        });
-    </script>
+    window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+        } else {
+            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+        }
+    });
+</script>
 </body>
 </html>
